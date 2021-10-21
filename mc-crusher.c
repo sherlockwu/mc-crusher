@@ -539,6 +539,7 @@ static void sleep_handler(const int fd, const short which, void *arg) {
 static inline void run_write(struct connection *c) {
     int i;
     c->wbuf_pos = c->wbuf;
+    printf("This is to run a run_write!\n");
     for (i = 0; i < c->pipelines; i++) {
         c->writer(c);
     }
