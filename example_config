@@ -1,0 +1,1 @@
+send=ascii_get,recv=blind_read,conns=5,key_prefix=t,key_prealloc=0,pipelines=1,thread=1

@@ -1,0 +1,5 @@
+time ./bench-warmer 127.0.0.1:11211 t 100 1000000
+
+./sample
+
+pkill memcached ; ufw allow 11211 ; memcached -d -m 100000 -p 11211 -u root -M -t 4

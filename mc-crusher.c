@@ -1018,7 +1018,7 @@ static void parse_config_line(mc_thread *main_thread, char *line, bool use_sock)
 
     template.s->key_prefix_len = strlen(template.s->key_prefix);
     template.s->cmd_postfix_len = strlen(template.s->cmd_postfix);
-
+    printf("===== Kan: to creat %d threads\n", new_thread);
     if (new_thread != 0) {
         // spawn N threads with very similar configurations. allows sharing
         // the key blob memory.
